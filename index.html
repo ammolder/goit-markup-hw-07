@@ -77,9 +77,9 @@
       </section>
 
       <!--Особенности  features-->
-      <section class="section features">
+      <section class="section section--features">
         <div class="container">
-          <h2 class="section-title hidden">Преимущества</h2>
+          <h2 class="container__title container__title--hidden">Преимущества</h2>
           <ul class="features-list">
             <li>
               <div class="features-icons">
@@ -136,7 +136,7 @@
       <!-- Чем занимаемся? -->
       <section class="section work">
         <div class="container">
-          <h2 class="section-title">Чем мы занимаемся</h2>
+          <h2 class="container__title">Чем мы занимаемся</h2>
           <ul class="work-list">
             <li>
               <div class="work-box">
@@ -175,7 +175,7 @@
       <!-- Наша команда -->
       <section class="section staff">
         <div class="container">
-          <h2 class="section-title">Наша команда</h2>
+          <h2 class="container__title">Наша команда</h2>
           <ul class="staff-name">
             <li class="staff-persons">
               <img
@@ -348,7 +348,7 @@
       <!-- Постоянные клиенты -->
       <section class="section clients">
         <div class="container">
-          <h2 class="section-title">Постоянные клиенты</h2>
+          <h2 class="container__title">Постоянные клиенты</h2>
           <ul class="clients-icons">
             <li>
               <a class="client-link" href="" rel="noopener noreferrer">
@@ -431,33 +431,33 @@
           </adress>
         </div>
 
-        <div class="social-footer">
-          <h3 class="title">ПРИСОЕДИНЯЙТЕСЬ</h3>
-          <ul class="social-links">
+        <div class="social">
+          <h3 class="social__title">ПРИСОЕДИНЯЙТЕСЬ</h3>
+          <ul class="social__links">
             <li>
-              <a class="link-icon" href="">
-                <svg class="instagram-footer" width="20px" height="20px">
+              <a class="social__icon" href="">
+                <svg class="social__instagram" width="20px" height="20px">
                   <use href="./images/icons.svg#instagram"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link-icon" href="">
-                <svg class="twitter-footer" width="20px" height="20px">
+              <a class="social__icon" href="">
+                <svg class="social__twitter" width="20px" height="20px">
                   <use href="./images/icons.svg#twitter"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link-icon" href="">
-                <svg class="facebook-footer" width="20px" height="20px">
+              <a class="social__icon" href="">
+                <svg class="social__facebook" width="20px" height="20px">
                   <use href="./images/icons.svg#facebook"></use>
                 </svg>
               </a>
             </li>
             <li>
-              <a class="link-icon" href="">
-                <svg class="linkedin-footer" width="20px" height="20px">
+              <a class="social__icon" href="">
+                <svg class="social__linkedin" width="20px" height="20px">
                   <use href="./images/icons.svg#linkedin"></use>
                 </svg>
               </a>
@@ -466,17 +466,17 @@
         </div>
 
         <form class="subscribe">
-          <p class="title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
-          <div class="subscribe-field" role="group">
+          <p class="subscribe__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ</p>
+          <div class="subscribe__field" role="group">
             <input
-              class="subscribe-email"
+              class="subscribe__email"
               type="email"
               name="subscribe"
               placeholder="E-mail"
             />
-            <button class="send" type="submit">
-              <span class="send-text">Подписаться</span>
-              <svg class="send-icon" width="24px" height="24px">
+            <button class="subscribe__send" type="submit">
+              <span class="subscribe__text">Подписаться</span>
+              <svg class="subscribe__icon" width="24px" height="24px">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -488,55 +488,55 @@
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
-        <button class="button-close" data-modal-close>
+        <button class="modal__close" data-modal-close>
           <svg width="30px" height="30px">
             <use href="./images/icons.svg#close"></use>
           </svg>
         </button>
-        <form class="form-modal">
-          <h2 class="title-modal">Оставьте свои данные, мы вам перезвоним</h2>
-          <label class="form-label">
-            <input class="form-input" type="text" name="name" />
-            <span class="form-text">Имя</span>
-            <svg class="icon-modal" width="18px" height="18px">
+        <form class="form">
+          <h2 class="form__title">Оставьте свои данные, мы вам перезвоним</h2>
+          <label class="form__label">
+            <input class="form__input" type="text" name="name" />
+            <span class="form__text">Имя</span>
+            <svg class="form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#person-modal"></use>
             </svg>
           </label>
-          <label class="form-label">
-            <input class="form-input" type="tel" name="tel" />
-            <span class="form-text">Телефон</span>
-            <svg class="icon-modal" width="18px" height="18px">
+          <label class="form__label">
+            <input class="form__input" type="tel" name="tel" />
+            <span class="form__text">Телефон</span>
+            <svg class="form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#phone-modal"></use>
             </svg>
           </label>
-          <label class="form-label">
-            <input class="form-input" type="email" name="email" />
-            <span class="form-text">Почта</span>
-            <svg class="icon-modal" width="18px" height="18px">
+          <label class="form__label">
+            <input class="form__input" type="email" name="email" />
+            <span class="form__text">Почта</span>
+            <svg class="form__icon" width="18px" height="18px">
               <use href="./images/icons.svg#email-modal"></use>
             </svg>
           </label>
-          <label class="comment-label">
-            <span class="form-text">Коментарий</span>
+          <label class="form__comment">
+            <span class="form__text">Коментарий</span>
             <textarea
-              class="form-comment"
+              class="form__chit"
               name="comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label class="checkbox-label">
+          <label class="form__deal">
             <input
-              class="checkbox-input"
+              class="form__checkbox"
               type="checkbox"
               name="agreement"
               checked
             />
-            <span class="checkbox-agreement"></span>
+            <span class="form__agreement"></span>
             Соглашаюсь с рассылкой и принимаю
-            <a class="checkbox-condition" href="">Условия договора</a>
+            <a class="form__condition" href="">Условия договора</a>
           </label>
 
-          <button class="form-button" type="submit">Отправить</button>
+          <button class="form__button" type="submit">Отправить</button>
         </form>
       </div>
     </div>
