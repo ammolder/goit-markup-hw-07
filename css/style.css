@@ -173,7 +173,6 @@ a {
 .site-nav,
 .contact {
   font-weight: 500;
-  font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.02em;
 }
@@ -307,6 +306,7 @@ h2 {
 .features__title {
   color: var(--title-text-color);
   font-weight: 700;
+  font-size: 14px;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -993,9 +993,4 @@ h2 {
 .form__button:focus {
   outline: none;
   box-shadow: 0 0 0 0.2em var(--bg-icon);
-}
-
-.adress-list__text {
-}
-.adress-list__info {
 }
