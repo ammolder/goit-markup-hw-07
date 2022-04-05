@@ -22,16 +22,16 @@
   --primari-text-color: #757575;
   --primari-white-color: #ffffff;
   --accent-color: #2196f3;
-  --header-bgrcolor: #ececec;
   --hero-bgrcolor: #2f303a;
-  --staff-bdrcolor: #f5f4fa;
+  --bg-text-work: #2f303acc;
+  --bg-second: #f5f4fa;
   --contact-footer: #ffffff99;
   --bg-icon-footer: #ffffff0a;
-  --hover-button: #188ce8;
-  --border-box: #eeeeee;
+  --hover-btn-hero: #188ce8;
+  --br-project__box: #eeeeee;
   --bg-icon: #afb1b8;
   --bg-overflay: #2196f3e5;
-  --form-color: #75757580;
+  --form-text-color: #75757580;
   --modal__input--br: #21212133;
   --br-email-footer: #ffffff4d;
   --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -67,7 +67,7 @@ a {
 
 /* Header */
 .container--header {
-  border-bottom: 1px solid var(--border-box);
+  border-bottom: 1px solid var(--br-project__box);
 }
 .container {
   width: 1200px;
@@ -259,7 +259,7 @@ a {
 }
 .hero__btn:hover,
 .hero__btn:focus {
-  background-color: var(--hover-button);
+  background-color: var(--hover-btn-hero);
 }
 
 /* Section */
@@ -322,7 +322,7 @@ h2 {
   height: 120px;
   margin-bottom: 30px;
   border: none;
-  background-color: var(--staff-bdrcolor);
+  background-color: var(--bg-second);
 }
 
 /* Work */
@@ -354,7 +354,7 @@ h2 {
 
   font-weight: 700;
   color: var(--primari-white-color);
-  background: #2f303acc;
+  background: var(--bg-text-work);
 }
 
 /* Staff */
@@ -362,7 +362,7 @@ h2 {
   padding-top: 94px;
   padding-bottom: 94px;
 
-  background-color: var(--staff-bdrcolor);
+  background-color: var(--bg-second);
 }
 .team__name {
   display: flex;
@@ -589,7 +589,7 @@ h2 {
 .subscribe__email:-webkit-autofill {
   border: 1px solid var(--br-email-footer);
   -webkit-text-fill-color: var(--br-email-footer);
-  -webkit-box-shadow: 0 0 0px 1000px #212121 inset;
+  -webkit-box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
   transition: background-color 5000s ease-in-out 0s;
 }
 .subscribe__email:-webkit-autofill:focus {
@@ -660,7 +660,7 @@ h2 {
   padding: 6px 22px;
 
   color: var(--title-text-color);
-  background-color: var(--staff-bdrcolor);
+  background-color: var(--bg-second);
   box-shadow: none;
   font-weight: 500;
   font-size: 16px;
@@ -686,9 +686,9 @@ h2 {
 /* Project */
 .project__box {
   padding: 20px 24px;
-  border-right: 1px solid var(--border-box);
-  border-bottom: 1px solid var(--border-box);
-  border-left: 1px solid var(--border-box);
+  border-right: 1px solid var(--br-project__box);
+  border-bottom: 1px solid var(--br-project__box);
+  border-left: 1px solid var(--br-project__box);
 }
 .project__name {
   color: var(--title-text-color);
@@ -912,7 +912,7 @@ h2 {
   max-width: 448px;
   max-height: 120px;
   min-height: 120px;
-  border: 1px solid #21212133;
+  border: 1px solid var(--modal__input--br);
   border-radius: 4px;
   transition: border 250ms var(--timing-function);
   color: var(--primari-text-color);
@@ -922,7 +922,7 @@ h2 {
   border: 1px solid var(--accent-color);
 }
 .form__chit::placeholder {
-  color: var(--form-color);
+  color: var(--form-text-color);
 }
 .form__deal {
   display: block;
