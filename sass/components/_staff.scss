@@ -1,0 +1,77 @@
+.section__team {
+  padding-top: 94px;
+  padding-bottom: 94px;
+
+  background-color: var(--bg-second);
+}
+.team__name {
+  display: flex;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.team__persons {
+  background-color: var(--primari-white-color);
+  box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
+    0px 2px 1px #0000001f;
+}
+.team__persons:not(:first-child) {
+  margin-left: 30px;
+}
+.person {
+  padding: 30px 32px;
+}
+.person__name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: $font-medium;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.person__position {
+  font-size: $font-medium;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.person__social {
+  display: inline-flex;
+  justify-content: center;
+}
+.person__item + .person__item {
+  margin-left: 10px;
+}
+.person__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  background-color: var(--primari-white-color);
+  border-radius: 50%;
+
+  transition: background-color 250ms var(--timing-function);
+}
+.person__link:hover,
+.person__link:focus {
+  background-color: var(--accent-color);
+}
+
+.instagram,
+.twitter,
+.facebook,
+.linkedin {
+  fill: var(--bg-icon);
+  transition: fill 250ms var(--timing-function);
+}
+.person__link:hover .instagram,
+.person__link:focus .instagram,
+.person__link:hover .twitter,
+.person__link:focus .twitter,
+.person__link:hover .facebook,
+.person__link:focus .facebook,
+.person__link:hover .linkedin,
+.person__link:focus .linkedin {
+  fill: var(--primari-white-color);
+}
