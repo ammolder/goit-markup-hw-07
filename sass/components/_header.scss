@@ -7,11 +7,12 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
+  .site-nav__logo {
+    display: inline-block;
+  }
 }
 /* Site-nav */
-.site-nav__logo {
-  display: inline-block;
-}
+
 .site-nav__logo--accent,
 .adress__logo--accent {
   margin-right: -4px;
