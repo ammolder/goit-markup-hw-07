@@ -14,10 +14,12 @@
   background-color: var(--primari-white-color);
   box-shadow: 0px 1px 3px #00000033, 0px 1px 1px #00000024,
     0px 2px 1px #0000001f;
+
+		&:not(:first-child) {
+			margin-left: 30px;
+		}
 }
-.team__persons:not(:first-child) {
-  margin-left: 30px;
-}
+
 .person {
   padding: 30px 32px;
 }
@@ -52,11 +54,13 @@
   border-radius: 50%;
 
   transition: background-color 250ms var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--accent-color);
+	}
 }
-.person__link:hover,
-.person__link:focus {
-  background-color: var(--accent-color);
-}
+
 
 .instagram,
 .twitter,
@@ -64,14 +68,15 @@
 .linkedin {
   fill: var(--bg-icon);
   transition: fill 250ms var(--timing-function);
-}
-.person__link:hover .instagram,
-.person__link:focus .instagram,
-.person__link:hover .twitter,
-.person__link:focus .twitter,
-.person__link:hover .facebook,
-.person__link:focus .facebook,
-.person__link:hover .linkedin,
-.person__link:focus .linkedin {
-  fill: var(--primari-white-color);
+
+	.person__link:hover .instagram,
+	.person__link:focus .instagram,
+	.person__link:hover .twitter,
+	.person__link:focus .twitter,
+	.person__link:hover .facebook,
+	.person__link:focus .facebook,
+	.person__link:hover .linkedin,
+	.person__link:focus .linkedin {
+		fill: var(--primari-white-color);
+	}
 }

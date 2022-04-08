@@ -66,11 +66,11 @@ h2 {
   margin-right: auto;
 }
 
-/* Site-nav */
-.site-nav__logo {
+.container .site-nav__logo {
   display: inline-block;
 }
 
+/* Site-nav */
 .site-nav__logo--accent,
 .adress__logo--accent {
   margin-right: -4px;
@@ -275,8 +275,7 @@ h2 {
   transition: background-color 2500ms var(--timing-function);
 }
 
-.hero__btn:hover,
-.hero__btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--hover-btn-hero);
 }
 
@@ -466,8 +465,7 @@ h2 {
   transition: background-color 250ms var(--timing-function);
 }
 
-.person__link:hover,
-.person__link:focus {
+.person__link:hover, .person__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -480,14 +478,38 @@ h2 {
   transition: fill 250ms var(--timing-function);
 }
 
-.person__link:hover .instagram,
-.person__link:focus .instagram,
-.person__link:hover .twitter,
-.person__link:focus .twitter,
-.person__link:hover .facebook,
-.person__link:focus .facebook,
-.person__link:hover .linkedin,
-.person__link:focus .linkedin {
+.instagram .person__link:hover .instagram,
+.instagram .person__link:focus .instagram,
+.instagram .person__link:hover .twitter,
+.instagram .person__link:focus .twitter,
+.instagram .person__link:hover .facebook,
+.instagram .person__link:focus .facebook,
+.instagram .person__link:hover .linkedin,
+.instagram .person__link:focus .linkedin,
+.twitter .person__link:hover .instagram,
+.twitter .person__link:focus .instagram,
+.twitter .person__link:hover .twitter,
+.twitter .person__link:focus .twitter,
+.twitter .person__link:hover .facebook,
+.twitter .person__link:focus .facebook,
+.twitter .person__link:hover .linkedin,
+.twitter .person__link:focus .linkedin,
+.facebook .person__link:hover .instagram,
+.facebook .person__link:focus .instagram,
+.facebook .person__link:hover .twitter,
+.facebook .person__link:focus .twitter,
+.facebook .person__link:hover .facebook,
+.facebook .person__link:focus .facebook,
+.facebook .person__link:hover .linkedin,
+.facebook .person__link:focus .linkedin,
+.linkedin .person__link:hover .instagram,
+.linkedin .person__link:focus .instagram,
+.linkedin .person__link:hover .twitter,
+.linkedin .person__link:focus .twitter,
+.linkedin .person__link:hover .facebook,
+.linkedin .person__link:focus .facebook,
+.linkedin .person__link:hover .linkedin,
+.linkedin .person__link:focus .linkedin {
   fill: var(--primari-white-color);
 }
 
@@ -524,8 +546,7 @@ h2 {
   transition: border 250ms var(--timing-function);
 }
 
-.client__link:hover,
-.client__link:focus {
+.client__link:hover, .client__link:focus {
   border: 1px solid var(--accent-color);
 }
 
@@ -582,8 +603,7 @@ h2 {
   transition: color 250ms var(--timing-function);
 }
 
-.adress-list__info:hover,
-.adress-list__info:focus {
+.adress-list__info:hover, .adress-list__info:focus {
   color: var(--accent-color);
 }
 
@@ -630,8 +650,7 @@ h2 {
   transition: background-color 250ms var(--timing-function);
 }
 
-.social__icon:hover,
-.social__icon:focus {
+.social__icon:hover, .social__icon:focus {
   background-color: var(--accent-color);
 }
 
@@ -690,6 +709,7 @@ h2 {
   border: 1px solid var(--br-email-footer);
   -webkit-text-fill-color: var(--br-email-footer);
   -webkit-box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
+  box-shadow: 0 0 0px 1000px var(--title-text-color) inset;
   -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
@@ -796,11 +816,6 @@ h2 {
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
-}
-
 .modal {
   position: absolute;
   top: 50%;
@@ -814,6 +829,11 @@ h2 {
   width: 528px;
   height: 581px;
   background-color: #fff;
+}
+
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal__close {
@@ -910,10 +930,6 @@ h2 {
   caret-color: var(--primari-text-color);
 }
 
-.form__input:focus ~ .form__icon {
-  fill: var(--accent-color);
-}
-
 .form__icon {
   position: absolute;
   left: 12px;
@@ -921,6 +937,10 @@ h2 {
   fill: var(--title-text-color);
   -webkit-transition: fill 250ms var(--timing-function);
   transition: fill 250ms var(--timing-function);
+}
+
+.form__input:focus ~ .form__icon {
+  fill: var(--accent-color);
 }
 
 .form__comment {
@@ -1113,7 +1133,7 @@ h2 {
 }
 
 .project__link:hover,
-.project__link:focus {
+.project__link .project__link:focus {
   -webkit-box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
           box-shadow: 1px 4px 6px 0px #00000029, 0px 4px 4px 0px #0000000f, 0px 1px 1px 0px #0000001f;
 }
@@ -1210,8 +1230,7 @@ h2 {
   transition: color 250ms var(--timing-function), background-color 250ms var(--timing-function), box-shadow 250ms var(--timing-function), -webkit-box-shadow 250ms var(--timing-function);
 }
 
-.btn__filter:hover,
-.btn__filter:focus {
+.btn__filter:hover, .btn__filter:focus {
   color: var(--primari-white-color);
   background-color: var(--accent-color);
   -webkit-box-shadow: 0px 2px 2px 0px #0000001f, 0px 1px 2px 0px #00000014, 0px 3px 1px 0px #0000001a;

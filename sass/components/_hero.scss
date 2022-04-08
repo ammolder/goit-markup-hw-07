@@ -38,8 +38,10 @@
   text-align: center;
 
   transition: background-color 2500ms var(--timing-function);
+
+	&:hover,
+	&:focus {
+		background-color: var(--hover-btn-hero);
+	}
 }
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: var(--hover-btn-hero);
-}
+
