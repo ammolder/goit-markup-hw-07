@@ -1,4 +1,5 @@
-.container--header {
+.header__container {
+	display: flex;
   border-bottom: 1px solid var(--br-project__box);
 }
 .container {
@@ -7,36 +8,33 @@
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  .site-nav__logo {
+  .logo {
     display: inline-block;
   }
 }
 /* Site-nav */
 
-.site-nav__logo--accent,
-.adress__logo--accent {
+.logo__accent {
   margin-right: -4px;
   color: var(--accent-color);
 }
-.site-nav__logo--black {
+.logo__dark {
   color: var(--title-text-color);
 }
-.adress__logo--white {
+.logo__white {
   color: var(--primari-white-color);
 }
 
-.site-nav__logo--accent,
-.site-nav__logo--black,
-.adress__logo--accent,
-.adress__logo--white {
+.logo__accent,
+.logo__dark,
+.logo__white {
   font-family: $logo-font;
-  font-weight: 700;
   font-size: 26px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.container--header {
+.cheader__container {
   display: flex;
   align-items: center;
 }
@@ -91,7 +89,8 @@
   }
 }
 
-#studio {
+.site-nav__link--current-studio,
+.site-nav__link--current-portfolio {
   color: var(--accent-color);
 
   &::after {
@@ -99,13 +98,13 @@
   }
 }
 
-#portfolio {
-  color: var(--accent-color);
+//#portfolio {
+//  color: var(--accent-color);
 
-  &::after {
-    opacity: 1;
-  }
-}
+//  &::after {
+//    opacity: 1;
+//  }
+//}
 
 /* Contact */
 
@@ -115,7 +114,7 @@
   line-height: 1.7;
   letter-spacing: 0.02em;
 }
-.contact li + li {
+.contact__item + .contact__item {
   margin-left: 50px;
 }
 .contact {
@@ -133,27 +132,14 @@
     color: var(--accent-color);
   }
 }
-
-.contact__envelope {
+.contact__icon {
   margin-right: 10px;
   fill: var(--primari-text-color);
 
   transition: fill 250ms var(--timing-function);
 
-  .contact__link--envelope:hover &,
-  .contact__link--envelope:focus & {
-    fill: var(--accent-color);
-  }
-}
-
-.contact__smartphone {
-  margin-right: 10px;
-  fill: var(--primari-text-color);
-
-  transition: fill 250ms var(--timing-function);
-
-  .contact__link--smartphone:hover &,
-  .contact__link--smartphone:focus & {
+  .contact__link:hover &,
+  .contact__link:focus & {
     fill: var(--accent-color);
   }
 }

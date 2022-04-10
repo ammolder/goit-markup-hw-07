@@ -1,11 +1,12 @@
 .section--clients {
   padding: 94px 0px;
 }
-.clients__item + .clients__item {
-  margin-left: 30px;
-}
 .clients__item {
   display: inline-flex;
+
+		& + & {
+			margin-left: 30px;
+		}
 }
 .client__link {
   display: flex;
